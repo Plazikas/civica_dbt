@@ -1,0 +1,26 @@
+version: 2
+
+models:
+  - name: stg_postgre_db__addresses
+    config: 
+      contract: 
+        enforced: true
+    description: 
+      Addresses from postgre
+    columns:
+      - name: address_id
+      - name: zipcode
+      - name: country
+      - name: address
+      - name: state
+      - name: _fivetran_deleted
+      - name: _fivetran_synced
+
+  - name: stg_postgre_db__orders
+    config: 
+      contract: 
+        enforced: true
+    description: 
+      "Orders in Postgre"
+    columns:
+      - name: order_id
