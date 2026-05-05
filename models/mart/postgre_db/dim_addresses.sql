@@ -1,0 +1,1 @@
+SELECT * FROM {{ ref('stg_postgre_db__addresses') }}

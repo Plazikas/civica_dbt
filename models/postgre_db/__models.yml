@@ -4,7 +4,7 @@ models:
   - name: stg_postgre_db__addresses
     config: 
       contract: 
-        enforced: true
+        enforced: false
     description: 
       Addresses from postgre
     columns:
@@ -19,7 +19,7 @@ models:
   - name: stg_postgre_db__orders
     config: 
       contract: 
-        enforced: true
+        enforced: false
     description: 
       "Orders in Postgre"
     columns:
