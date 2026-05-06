@@ -1,3 +1,4 @@
+# models/google_sheet/__sources.yml
 version: 2
 
 sources:
@@ -9,6 +10,15 @@ sources:
     tables:
 
       - name: users
+        config:
+          loaded_at_field: fecha_alta_sistema
+          freshness: 
+              warn_after:
+                count: 24
+                period: hour
+              error_after: 
+                count: 48
+                period: hour
         columns:
           - name: Nombre
           - name: DNI
